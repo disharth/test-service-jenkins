@@ -9,6 +9,7 @@ node {
     
    }
    stage('deploy') {
+   shell('mvn package && java -jar target/test-service-jenkins-app.jar')
     
    }
 }
