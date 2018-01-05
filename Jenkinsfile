@@ -9,6 +9,7 @@ job('test-service-jenkins-dsl') {
         scm('H/15 * * * *')
     }
     steps {
-        maven('-e clean install')
+        
+        shell('mvn package && java -jar target/test-service-jenkins-app.jar')
     }
 }
