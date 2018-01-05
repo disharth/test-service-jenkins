@@ -8,7 +8,6 @@ node {
    stage('test') {
     
    }
-   fdfd
    stage('deploy') {
    shell('mvn package && java -jar target/test-service-jenkins-app.jar')
     
